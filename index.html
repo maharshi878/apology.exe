@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THE APOLOGY.exe</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    body {
+      background-color: #000;
+      color: #33ff33;
+      font-family: 'VT323', monospace;
+      font-size: 1.8rem;
+      padding: 40px;
+      cursor: crosshair;
+    }
+
+    .line {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease-in-out;
+      margin: 10px 0;
+      white-space: pre-wrap;
+    }
+
+    .line.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #footer {
+      margin-top: 35px;
+      font-size: 1.2rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body onclick="revealNextLine()">
+
+  <div id="container">
+    <div class="line">> SYSTEM ONLINE.</div>
+    <div class="line">> INITIATING: Belated_Birthday_Wish.exe</div>
+    <div class="line">> ERROR 001: WISH WAS NOT SENT ON TIME 🤡</div>
+    <div class="line">> EMERGENCY OVERRIDE : Activating recovery sequence...</div>
+    <div class="line">> Hey Nitya, I kinda... forgot your birthday 😅</div>
+    <div class="line">> Not ghosting. Just dumb. Certified.</div>
+    <div class="line">> But hey—here I am now, fully loaded with good vibes.</div>
+    <div class="line">> Happy freakin' Birthday, legend 🎉</div>
+    <div class="line" style="color: #999;">> *belated, at least 😅</div>
+    <div class="line">> Wishing you joy, memes, and Wi-Fi that never lags.</div>
+    <div class="line">> Consider this wish upgraded and ultra-delivered.</div>
+    <div class="line">> Late, but lit. Still counts. 😎</div>
+    <div class="line">> - A total disaster of a person, Maharshi.</div>
+    <div class="line">> SYSTEM STATUS: Friendship still intact ✅</div>
+    <div class="line">> wait 😰 is it? reply with code 002 if yes and 003 if no 😂</div>
+    <div class="line">> bye bro 👋 over and out</div>
+  </div>
+
+  <div id="footer">[Click anywhere to reveal lines, GENIUS]</div>
+
+  <script>
+    let index = 0;
+    const lines = document.querySelectorAll('.line');
+
+    function revealNextLine() {
+      if (index < lines.length) {
+        lines[index].classList.add('show');
+        index++;
+      }
+    }
+  </script>
+
+</body>
+</html>
