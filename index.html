@@ -1,4 +1,5 @@
-<!-- hey! you found the code. explore, you smart ahh!-->
+<!-- hey! you found the code. explore, you smart ahh! reply with code 004 if you found this!-->
+<!-- 17th revision, including vscode! -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,13 +31,19 @@
     }
 
     #footer {
-      margin-top: 35px;
       font-size: 1.2rem;
       color: #999;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
     }
   </style>
 </head>
 <body onclick="revealNextLine()">
+
+  <div id="footer">[Click anywhere to reveal lines, GENIUS]</div>
 
   <div id="container">
     <div class="line">> SYSTEM ONLINE.</div>
@@ -56,8 +63,6 @@
     <div class="line">> wait 😰 is it? reply with code 002 if yes and 003 if no 😂</div>
     <div class="line">> bye bro 👋 over and out</div>
   </div>
-
-  <div id="footer">[Click anywhere to reveal lines, GENIUS]</div>
 
   <script>
     let index = 0;
